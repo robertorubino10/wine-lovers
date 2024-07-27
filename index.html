@@ -34,14 +34,14 @@
       const catChat = document.querySelector("#cat-chat")
 
       catChat.settings = {
-        baseUrl: 'CdkCat-Chish-jWzfAX0mAmdJ-407148486.eu-central-1.elb.amazonaws.com',
+        baseUrl: 'ai-agent-be-base-u6gr3fpmpa-oc.a.run.app',
         port: '',
         user: 'user',
         why: 'True',
         secure: 'True',
         ws: {
           onFailed: (error) => {
-            console.log(error)
+            console.log(error.description)
           }
         },
         callback: (message) => {
