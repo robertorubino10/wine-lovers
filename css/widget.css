@@ -2421,6 +2421,7 @@ html {
   transition-property: all !important;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
   transition-duration: 75ms !important;
+  --webkit-user-select: text;
 }
 .select:focus,
 .input:focus,
