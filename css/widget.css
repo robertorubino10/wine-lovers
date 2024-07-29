@@ -1223,6 +1223,10 @@ html {
   --tw-bg-opacity: 1;
   background-color: hsl(var(--b1) / var(--tw-bg-opacity));
   border-radius: var(--rounded-btn, 0.5rem);
+  -webkit-user-select: text; /* rrob Chrome, Opera, Safari */
+  -moz-user-select: text; /* Firefox 2+ */
+  -ms-user-select: text; /* IE 10+ */
+  user-select: text; /* Standard syntax */
 }
 .input-group > .input {
   isolation: isolate;
@@ -2421,7 +2425,6 @@ html {
   transition-property: all !important;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
   transition-duration: 75ms !important;
-  --webkit-user-select: text;
 }
 .select:focus,
 .input:focus,
@@ -2675,7 +2678,6 @@ html {
 }
 .w-full {
   width: 100%;
-  --webkit-user-select: text;
 }
 .w-px {
   width: 1px;
