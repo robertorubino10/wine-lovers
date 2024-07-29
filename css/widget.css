@@ -2675,6 +2675,7 @@ html {
 }
 .w-full {
   width: 100%;
+  --webkit-user-select: text;
 }
 .w-px {
   width: 1px;
