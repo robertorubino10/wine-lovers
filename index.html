@@ -31,6 +31,18 @@
     <cheshire-cat-chat id="cat-chat" />
     
     <script>
+      // Funzione per generare un clientId randomico
+      function generateClientId() {
+        return 'user_' + Math.random().toString(36).substr(2, 9);
+      }
+
+      // Recupera o genera un nuovo clientId
+      let clientId = localStorage.getItem('clientId');
+      if (!clientId) {
+        clientId = generateClientId();
+        localStorage.setItem('clientId', clientId);
+      }
+
       const catChat = document.querySelector("#cat-chat")
 
       catChat.settings = {
@@ -38,6 +50,7 @@
         port: '',
         why: 'True',
         secure: 'True',
+        user: clientId,  // Aggiungi il clientId al catChat
         ws: {
           onFailed: (error) => {
             console.log(error.description)
