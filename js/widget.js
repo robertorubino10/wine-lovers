@@ -33187,7 +33187,7 @@ var cV = class {
 				retries: 3,
 				...this.config.ws
 			};
-			this.ws = new IC(`ws${this.url}/${e.path}`), this.ws.onopen = () => {
+			this.ws = new IC(`ws${this.url}/${e.path}/${this.config.user}`), this.ws.onopen = () => {
 				var t;
 				(t = this.connectedHandler) == null || t.call(this)
 			}, this.ws.onclose = () => {
