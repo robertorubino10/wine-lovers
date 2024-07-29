@@ -2406,6 +2406,7 @@ html {
 .select,
 .input,
 .textarea {
+  transform: translateZ(0);
   overflow: hidden;
   border-width: 0px;
   background-color: transparent;
